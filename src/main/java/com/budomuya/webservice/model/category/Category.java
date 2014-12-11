@@ -1,15 +1,18 @@
-package com.budomuya.webservice.model;
+package com.budomuya.webservice.model.category;
+
+import com.budomuya.webservice.model.BaseModel;
 
 /**
  * Created by alparslanb
  * on 11/12/14.
  */
-public class Category {
+public class Category extends BaseModel {
 
     private String key;
     private String value;
 
     public Category (String key, String value) {
+        super();
         this.key = key;
         this.value = value;
     }

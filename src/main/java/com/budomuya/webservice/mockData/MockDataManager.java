@@ -1,7 +1,7 @@
 package com.budomuya.webservice.mockData;
 
-import com.budomuya.webservice.model.Category;
-import com.budomuya.webservice.model.News;
+import com.budomuya.webservice.model.category.Category;
+import com.budomuya.webservice.model.news.News;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,8 @@
-package com.budomuya.webservice.controller;
+package com.budomuya.webservice.controller.category;
 
+import com.budomuya.webservice.controller.BaseController;
 import com.budomuya.webservice.mockData.MockDataManager;
-import com.budomuya.webservice.model.Category;
+import com.budomuya.webservice.model.category.Category;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * on 11/12/14.
  */
 @RestController
-public class CategoryController {
+public class CategoryController extends BaseController {
 
     @RequestMapping("/getCategories")
     public List<Category> getCategories() {

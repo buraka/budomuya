@@ -1,10 +1,12 @@
-package com.budomuya.webservice.model;
+package com.budomuya.webservice.model.news;
+
+import com.budomuya.webservice.model.BaseModel;
 
 /**
  * Created by alparslanb
  * on 11/12/14.
  */
-public class News {
+public class News extends BaseModel {
 
     private String name;
     private String snippet;
@@ -14,6 +16,7 @@ public class News {
     public News(String name, String snippet,
                 String image, String imageUrl) {
 
+        super();
         this.name = name;
         this.snippet = snippet;
         this.image = image;
