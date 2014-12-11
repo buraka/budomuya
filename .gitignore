@@ -1,0 +1,16 @@
+syntax: glob
+
+# IDE Related Files
+*.iml
+.idea
+.project
+.settings/
+.classpath
+
+# Mercurial Left Off Files
+*.orig
+
+# Build Output Files
+target/
+
+OXIWebService.iml

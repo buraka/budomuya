@@ -1,5 +1,6 @@
 package com.budomuya.webservice.configuration;
 
+import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -14,8 +15,11 @@ public class OXIInitializer implements WebApplicationInitializer {
 
 		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 		ctx.register(OXIConfiguration.class);
-		ctx.setServletContext(container);
 
+        FilterRegistration.Dynamic corsFilter = container.addFilter("corsFilter", CORSFilter.class);
+        corsFilter.addMappingForUrlPatterns(null, false, "/*");
+
+        ctx.setServletContext(container);
 		ServletRegistration.Dynamic servlet = container.addServlet(
 				"dispatcher", new DispatcherServlet(ctx));
 
