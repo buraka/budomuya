@@ -38,25 +38,25 @@ public class MockDataManager {
         news.add(new News(
                 "Radikal",
                 "Fast just got faster with Nexus S.",
-                "img/phones/dell-streak-7.1.jpg",
+                "img/news/dell-streak-7.1.jpg",
                 "http://www.radikal.com.tr"
         ));
         news.add(new News(
                 "Zaman",
                 "Fast just got faster with Nexus S.",
-                "img/phones/dell-venue.2.jpg",
+                "img/news/dell-venue.2.jpg",
                 "http://www.zaman.com.tr/haber"
         ));
         news.add(new News(
                 "Sabah",
                 "Fast just got faster with Nexus S.",
-                "img/phones/dell-venue.3.jpg",
+                "img/news/dell-venue.3.jpg",
                 "http://www.sabah.com.tr"
         ));
         news.add(new News(
                 "Hurriyet",
                 "Fast just got faster with Nexus S.",
-                "img/phones/dell-venue.4.jpg",
+                "img/news/dell-venue.4.jpg",
                 "http://www.hurriyet.com.tr/anasayfa"
         ));
 
